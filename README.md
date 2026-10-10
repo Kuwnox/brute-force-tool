@@ -1,4 +1,4 @@
-# AutoIt Brute-Force Tool
+# Python Brute-Force & Hash Cracker Tool
 
 > **⚠️ DISCLAIMER / YASAL UYARI:** 
 > This tool is developed strictly for **educational purposes, penetration testing, and security research** on systems you own or have explicit, written authorization to test. The author accepts no liability and is not responsible for any misuse or damage caused by this program.
@@ -6,24 +6,25 @@
 ---
 
 ## 📌 About
-This is a lightweight automation script built using **AutoIt v3** to perform credential testing and login automation. It was created to understand authentication mechanisms and protocol behavior.
+This is a lightweight multi-threaded password testing and hash cracking script built using **Python**. It utilizes concurrent threading to optimize performance and test credentials/hashes efficiently.
 
 ## ⚙️ Features
-* Lightweight AutoIt-based automation.
-* Configurable delay and target parameters.
-* Simple script structure for easy auditing and customization.
+* Multi-threaded processing for faster execution.
+* Safe counter synchronization using threading locks.
+* Supports common hashing algorithms (e.g., MD5, SHA-256).
+* Clean and lightweight script structure for easy auditing.
+
+🛡️ Responsible Use
+By using this repository, you agree to use it only for lawful security testing and educational auditing. Unauthorized access to computer systems or cracking hashes without authorization is illegal.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-1. Download and install [AutoIt v3](https://www.autoitscript.com/site/autoit/downloads/).
-2. (Optional) Install [VS Code](https://code.visualstudio.com/) with the AutoIt extension for code editing.
+Make sure you have **Python 3.x** installed on your system. This script relies entirely on Python's built-in standard libraries (like `hashlib`, `threading`, `time`, `os`), so **no external pip packages are required**.
 
 ### Usage
 1. Clone or download this repository.
-2. Open the `.au3` script in SciTE or your preferred editor.
-3. Configure your target parameters within the script.
-4. Run the script using AutoIt or compile it into an executable (`.exe`).
-
-## 🛡️ Responsible Use
-By using this repository, you agree to use it only for lawful security testing. Unauthorized access to computer systems is illegal.
+2. Open your terminal or command prompt in the project directory.
+3. Run the script using Python:
+   ```bash
+   python script_name.py
